@@ -37,7 +37,7 @@ public class MenuItem {
     public String getPrice() {
         int dollars = priceInCents / 100;
         int cents = priceInCents % 100;
-        string price = "$" + dollars + ".";
+        String price = "$" + dollars + ".";
         if(cents < 10){
             price += "0" + cents;
         }
@@ -60,7 +60,7 @@ public class MenuItem {
     public String getPrice(int width) {
         int dollars = priceInCents / 100;
         int cents = priceInCents % 100;
-        string price = "$" + dollars + ".";
+        String price = "$" + dollars + ".";
         if(cents < 10){
             price += "0" + cents;
         }
