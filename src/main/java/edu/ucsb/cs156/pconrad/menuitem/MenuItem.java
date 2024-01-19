@@ -35,7 +35,16 @@ public class MenuItem {
      */
 
     public String getPrice() {
-        return "stub";
+        double dollars = priceInCents / 100.0;
+        int cents = priceInCents % 100;
+        string price = "$" + dollars + ".";
+        if(cents < 10){
+            price += "0" + cents;
+        }
+        else{
+            price += cents;
+        }
+        return price;
     }
 
     /**
