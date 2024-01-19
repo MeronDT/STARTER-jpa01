@@ -58,18 +58,19 @@ public class MenuItem {
      */
 
     public String getPrice(int width) {
-        int dollars = priceInCents / 100;
-        int cents = priceInCents % 100;
-        String price = "$" + dollars + ".";
-        if(cents < 10){
-            price += "0" + cents;
+        String price = getPrice();
+        if(price.length() > width){
+            throw new TooNarrowException;
         }
-        else{
-            price += cents;
-        }
-        return price;
+
+
+
+        return String
     }
 
+    public int getPriceInCents() {
+        return this.priceInCents;
+    }
     /**
      * return a string in csv format, in the order name,price,cateogry.
      * For example <code>Small Poke Bowl,1049,Poke Bowls</code>
@@ -77,13 +78,9 @@ public class MenuItem {
      * @return string in csv format
      */
 
-    public int getPriceInCents() {
-        return this.priceInCents;
-    }
-
     @Override
     public String toString() {
-        return "stub";
+        return name + priceInCents + category;
     }
 
 }
