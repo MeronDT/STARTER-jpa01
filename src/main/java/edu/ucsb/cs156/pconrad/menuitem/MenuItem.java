@@ -63,6 +63,8 @@ public class MenuItem {
             throw new TooNarrowException;
         }
 
+        StringBuilder result = new StringBuilder();
+
 
 
         return String
@@ -80,7 +82,8 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        return name + priceInCents + category;
+        String csv = name + priceInCents + category;
+        return csv;
     }
 
 }
