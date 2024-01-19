@@ -63,11 +63,11 @@ public class MenuItem {
             throw new TooNarrowException;
         }
 
-        StringBuilder result = new StringBuilder();
+        
 
 
 
-        return String
+        return price;
     }
 
     public int getPriceInCents() {
@@ -82,8 +82,8 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        //String csv = name + priceInCents + category;
-        return "csv";
+        String csv = name + priceInCents + category;
+        return csv;
     }
 
 }
