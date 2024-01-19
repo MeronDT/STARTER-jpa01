@@ -82,8 +82,8 @@ public class MenuItem {
 
     @Override
     public String toString() {
-        String csv = name + priceInCents + category;
-        return csv;
+        //String csv = name + priceInCents + category;
+        return "csv";
     }
 
 }
