@@ -16,7 +16,17 @@ public class MenuItem {
 
 
     public MenuItem(String name, int priceInCents, String category) {
-        // stub
+        this.name = name;
+        this.priceInCents = priceInCents;
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return this.category;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     /**
@@ -48,6 +58,10 @@ public class MenuItem {
      *
      * @return string in csv format
      */
+
+    public int getPriceInCents() {
+        return this.priceInCents;
+    }
 
     @Override
     public String toString() {
