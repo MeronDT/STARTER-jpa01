@@ -61,9 +61,9 @@ public class MenuItem {
         String price = getPrice();
 
         int numSpaces = width - price.length();
-        /*if(numSpaces < 0){
-            throw new TooNarrowException;
-        }*/
+        if(numSpaces < 0){
+            throw new TooNarrowException();
+        }
 
         String spaces = "";
         for(int i = 0; i < numSpaces; i++){
